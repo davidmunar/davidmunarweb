@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;       
+}
+.caja1{
+   background-color: #000000;
+   width: 25rem;  
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(/font/GILB____.TTF);
+  }
+  p{
+      text-align: justify;
+    font-family: myFirstFont;
+  }
+  @font-face {
+    font-family: myFirstFont;
+    src: url(/font/GILB____.TTF);
+  }
+  h1{
+    color: white;
+    font-family: myFirstFont;
+  }
+  .cajaparrafo{
+      margin-top: 5rem;
+  }
+  .margenprogra{
+      margin: 20px;
+      padding: 5px;
+  }
