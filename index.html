@@ -12,104 +12,72 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- animated -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <div class="container-fluid">   
-        <!-- Inicio Navbar   -->
-        <!-- <nav class="navbar navbar-expand-lg navbar-black bg-black fixed-top">         
-           <a class="navbar-brand" href="#"><img src="images/ferrariLogo.png" width="80px" alt=""></a>
-           <button class="navbar-toggler-withe" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-             <ul class="navbar-nav">
-               <li class="nav-item">
-                 <a class="nav-link active" aria-current="page" href="#" style="color:white">Inicio</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="#" style="color:white">Portafolio</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="#" style="color:white">Habilidades</a>
-               </li>
-               <li class="nav-item">
-                <a class="nav-link" href="#" style="color:white">Timeline</a>
-              </li> -->
-              <!-- contacto -->
-                 <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
-                     Contacto
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                   <li>
-                       <a class="dropdown-item" href="#" style="color:#000000">Behance</a>
-                    </li>
-                   <li>
-                       <a class="dropdown-item" href="#" style="color:#000000">Instagram</a>
-                    </li>
-                   <li>
-                       <a class="dropdown-item" href="#" style="color:##000000">WhatsApp</a>
-                    </li>
-                    </ul>
-                </li>
-                </ul>    
-        </nav> -->
+      <!-- inicio navbar -->
+      
         <header class="fixed-top">
           <div class="inner-width">
-              <h2>Bienvenidos</h2>
+              <h2 data-text="Bienvenidos" class="light">Bienvenidos</h2>
               <div class="menu-icon">
                   <i class="fas fa-bars"></i>
               </div>
           </div>
       </header>
-      <div class="navigation-menu">
-          <nav style="list-style: none;">
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Portafolio</a></li>
-              <li><a href="#">Habilidades</a></li>
+      <div id="cinco" class="navigation-menu">
+          <nav  style="list-style: none;">
+              <li><a data-text="Inicio" class="light" href="#">Inicio</a></li>
+              <li><a data-text="Portafolio" class="light" href="#">Portafolio</a></li>
+              <li><a data-text="Habilidades" class="light" href="#">Habilidades</a></li>
               <li class="navigation-menuc">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#cff8cc">
+                <a data-text="contacto" class="nav-link dropdown-toggle light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#cff8cc">
                  Contacto
                 </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                <li>
-                   <a class="dropdown-item" href="#" style="color:#86e64f">Behance</a>
+                   <a data-text="Behance" class="dropdown-item" href="https://www.behance.net/munargrafico/" style="color:#86e64f">Behance</a>
                 </li>
                <li>
-                   <a class="dropdown-item" href="#" style="color:#86e64f">Instagram</a>
+                   <a data-text="Instagram" class="dropdown-item light" href="https://www.instagram.com/damunar01/" style="color:#86e64f">Instagram</a>
                 </li>
                <li>
-                   <a class="dropdown-item" href="#" style="color: #86e64f">WhatsApp</a>
+                   <a data-text="WhatsApp" class="dropdown-item light" href=" https://api.whatsapp.com/send?phone=573134243939&text=Hola!%20habla%20con%20David Munar%20%C2%BFcómo%20le%20puedo%20ayudar?" style="color: #86e64f">WhatsApp</a>
                 </li>
             </ul>
             </li>
             </ul>    
-          </nav>
-      
+          </nav>      
         </div>
         <br>
         <br>
         <br>
         <br>
-       <!-- fin Navbar] -->          
+       <!-- fin Navbar] -->
+        <!-- Inicio info David Munar -->                 
             <div class="row">
-                <div class="col-12 col-md-4 col-xs-12 cajadm">
-                   <img src="image/logodm.png">            
+                <div class="col-12 col-md-4">
+                   <img src="image/logodm.png" width="80%">            
                 </div>
-                <div class="col-12 col-md-3 col-xs-12 logocir">
-                    <img src="image/logocir.png" width="70%">
+                <div class="col-12 col-md-4">
+                      <img class="animate_animated animate__slideInDown" id="uno" src="image/logodm1.png">
+                      <img class="animate_animated animate__rotateIn" id="dos" src="image/logodm2.png">
+                      <img class="animate_animated animate__rotateIn" id="tres" src="image/logodm3.png">
                 </div>
-                <div class="col-12 col-md-4 col-xs-12 cajaparrafo">
-                    <p><img src="image/com1-05.svg" width="30px">Me apasionan mi trabajo y mis metas,
-                        mi objetivo es siempre poner a prueba mis
-                        habilidades y creatividad, me gusta el trabajo
-                        en entornos creativos, en equipo o individual<img src="image/com2-06.svg" width="30px">
-                    </p>
-                </div>
+                <div class="col-12 col-md-4">
+                      <p><img src="image/com1-05.svg" width="30px">Me apasionan mi trabajo y mis metas,
+                          mi objetivo es siempre poner a prueba mis
+                          habilidades y creatividad, me gusta el trabajo
+                          en entornos creativos, en equipo o individual<img src="image/com2-06.svg" width="30px">
+                      </p>
+                <div>
+              </div>
             </div> 
-            <br>
-        <!-- slider --> 
-          <div class="row">     
+            <!-- fin info David Munar -->
+            <!-- slider --> 
+          <div class="row sliderb">     
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -165,41 +133,43 @@
                 </div>
               </div>
               <!-- Fin images -->
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
+              <button class="carousel-control-prev sliderb" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon sliderb" aria-hidden="true"></span>
+                <span class="visually-hidden sliderb">Anterior</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
+              <button class="carousel-control-next sliderb" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon sliderb" aria-hidden="true"></span>
+                <span class="visually-hidden sliderb">Siguiente</span>
               </button>
               </div>
             </div>
-            <!-- Fin slider -->        
+            <!-- Fin slider -->    
             <div class="row">
-                <div class="col-12 col-md-9 caja1" style="border-right: 5px solid #D1E6CF;">
-                    <h1 style="color: white;">Habilidades</h1>
-                    <img src="image/grafico.png" width="50%">
-                </div>
-                <div class="col-12 col-md-3 caja1" style="border-left: 5px #D1E6CF;">
-                    <h1 style="color: white;">Programas</h1>
-                    <div class="margenprogra">
-                        <img src="image/ai.png" width="60%" alt="">
-                    </div>
-                    <div class="margenprogra">
-                        <img src="image/ps.png" width="60%" alt="">
-                    </div>
-                    <div class="margenprogra">
-                        <img src="image/id.png" width="60%" alt="">
-                    </div>
-                    <div class="margenprogra">
-                        <img src="image/lr.png" width="60%" alt="">
-                    </div>
-                    <div class="margenprogra">
-                        <img src="image/cdr.png" width="60%" alt="">
-                    </div>
-                </div>
-            </div>  
+              <div class="col-12 col-md-9 caja1">
+                  <h1 style="color: white;">Habilidades</h1>
+                  <img src="image/grafico.png" width="50%">
+              </div>
+              <div class="col-12 col-md-3 caja1">
+                  <h1 style="color: white;">Programas</h1>
+                  <div class="margenprogra" style="align-items: center;">
+                      <img src="image/ai.png" width="60%" alt="">
+                  </div>
+                  <div class="margenprogra">
+                      <img src="image/ps.png" width="60%" alt="">
+                  </div>
+                  <div class="margenprogra">
+                      <img src="image/id.png" width="60%" alt="">
+                  </div>
+                  <div class="margenprogra">
+                      <img src="image/lr.png" width="60%" alt="">
+                  </div>
+                  <div class="margenprogra">
+                      <img src="image/cdr.png" width="60%" alt="">
+                  </div>
+              </div>
+          </div>  
+            
+            
     </div>
          
 
