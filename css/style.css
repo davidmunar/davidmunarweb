@@ -6,8 +6,11 @@ body{
   --var-color: rgb(0, 238, 255) 
     margin: 0;
     padding: 0;
+    display: grid;
+    text-decoration: none;
               
 }
+/* navbar title */
 .light {
 font-size: 30px;
 color: var(--var-color);
@@ -63,19 +66,19 @@ animation-delay: 1s;
     filter: blur(5px) brightness(0);
   }
   50% {
-    filter: blur(5px) brightness(1);
+    filter: blur(5px) brightness(2);
   }
   65% {
     filter: blur(5px) brightness(1);
   }
   85% {
-    filter: blur(5px) brightness(1);
-  }
-  95% {
     filter: blur(5px) brightness(0);
   }
-  100% {
+  95% {
     filter: blur(5px) brightness(1);
+  }
+  100% {
+    filter: blur(5px) brightness(2);
   }
 }
 
@@ -203,20 +206,41 @@ a:hover {
   color: #86e64f !important;
 }
 /* fin navbar */
-.caja1{
-  margin-block: 10px;
+
+
+
+
+.caja1 {
+  margin-block: 10px 10px 10px 10px;
+  padding: 10px;
    background-color: #000000;
+   justify-content: center; 
    align-items: stretch;
 }
 
-.cajadm{
-  margin: 0px;
+.caja2 { 
+  margin:10px;
+  padding: 10px;
+      
 }
-/* .cajacopy{
-  margin-top: 10px;
-  margin-left: 30px;
-  margin-right: 30px;
-} */
+.caja3 { 
+  margin:10px;
+  padding: 10px;
+  
+        
+}
+
+
+.sliderb {
+  z-index: 1;
+  margin: 5px;
+  padding: 5px;
+}
+
+.cajadm {
+  margin: 1em;
+}
+
 @font-face {
     font-family: myFirstFont;
     src: url(/font/GILB____.TTF);
@@ -224,7 +248,7 @@ a:hover {
 
   p{
     color: #000000;
-    font-size: x-large;
+    font-size: large;
     text-align: justify;
     font-family: myFirstFont;
   }
@@ -237,12 +261,49 @@ a:hover {
     color: white;
     font-family: myFirstFont;
   }
+
+  h4{
+    color: #fd0505;
+    font-size: xx-large;
+    text-align: justify;
+    font-family: myFirstFont;
+  } 
+
+  h5{
+    color: white;
+    font-family: myFirstFont;
+    font-size: medium;
+  }
+
+  
   .cajaparrafo{
       justify-content: center;
   } 
+footer {
+ background-color: #000000;
+ text-decoration: none;
+ justify-content: space-between;
+} 
+
+.cajacon {
+  justify-content: flex-end;
+}
+
+
+
+  .cajaweb {
+    justify-items: center;
+    justify-content: space-around;
+    background-color: #000000;
+    margin: 10px;
+    text-decoration: none;   
+    
+} 
+
   .margenprogra{
-      margin: 20px;
+      margin: 5px;
       padding: 5px;
+      justify-content: center;
   }
   h5{   
     color: #000000;
@@ -344,39 +405,153 @@ a:hover {
 }
 
 
-.logocir {
-justify-items: baseline;
-}
 
-#uno {
-  width: 30%;
-  position: absolute;
+
+#uno { 
+  max-width: 300px;
+  position: absolute;  
   z-index: 1;
   animation-delay: 1.5;
   animation-duration: 1s;
 }
 
-#dos {
-   width: 30%;
-   position: absolute;
+#dos {  
+  max-width: 300px;
+   position: absolute;  
    z-index: 1;
    animation-delay: 2.0;
    animation-duration: 2s;
 }
 
-#tres {
-   width: 30%;
-   position: absolute;
+#tres {  
+  max-width: 300px;
+   position: absolute;  
    z-index: 1;
    animation-delay: 4.0;
    animation-duration: 5s;
 }
 
-.sliderb{
-  z-index: 1;
-}
+
 #cinco {
   position: fixed;
   width: 100%;
   z-index: 1001;
+}
+
+
+/*graficos programas */
+svg {
+  width: 100px;
+  height: 100px;
+  margin: 1em;
+}
+
+.bg {
+  fill: none;
+  stroke-width: 7px;
+  stroke: rgba(209, 255, 205, 0.294);
+}
+
+[class^="meter-"] {
+fill: none;
+stroke-width: 7px;
+stroke-linecap: round;
+transform: rotate(-90deg);
+transform-origin: 50% 50%;
+}
+
+.meter-1 {
+  stroke-dasharray: 360;
+  stroke-dashoffset: 200;
+  stroke: #86e64f;
+  animation: progress-1 1.5s ease-out;     
+}
+
+.meter-2 {
+  stroke: #86e64f;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 200;    
+  animation: progress-2 1.5s ease-out;     
+}
+
+.meter-3 {
+  stroke: #86e64f;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 220;    
+  animation: progress-3 1.5s ease-out;     
+}
+
+.meter-4 {
+  stroke: #86e64f;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 160;    
+  animation: progress-4 3s ease-out;     
+}
+
+.meter-5 {
+  stroke: #86e64f;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 140;    
+  animation: progress-5 4s ease-out;     
+}
+
+@keyframes progress-1 {
+  from{
+      stroke-dashoffset: 360;
+  }
+  to {
+      stroke-dashoffset: 200;
+  }
+}
+
+@keyframes progress-2 {
+  from{
+      stroke-dashoffset: 360;
+  }
+  to {
+      stroke-dashoffset: 200;
+  }
+}
+
+@keyframes progress-3 {
+  from{
+      stroke-dashoffset: 360;
+  }
+  to {
+      stroke-dashoffset: 220;
+  }
+}
+
+@keyframes progress-4 {
+  from{
+      stroke-dashoffset: 360;
+  }
+  to {
+      stroke-dashoffset: 160;
+  }
+}
+
+@keyframes progress-5 {
+  from{
+      stroke-dashoffset: 360;
+  }
+  to {
+      stroke-dashoffset: 140;
+  }
+}
+/*fin graficos programas */
+
+
+.img-magnifier-container {
+  position: relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 60px;
+  height: 60px;
 }
