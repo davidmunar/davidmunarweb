@@ -552,6 +552,6 @@ transform-origin: 50% 50%;
   border-radius: 50%;
   cursor: none;
   /*Set the size of the magnifier glass:*/
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
 }

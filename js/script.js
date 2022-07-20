@@ -59,5 +59,5 @@ function getCursorPos(e) {
 }
 }
 /* Execute the magnify function: */
-magnify("timeline", 3);
+magnify("timeline", 2);
 /* Specify the id of the image, and the strength of the magnifier glass: */ 
