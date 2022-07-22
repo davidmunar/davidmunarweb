@@ -434,7 +434,7 @@ footer {
    position: absolute;  
    z-index: 1;
    animation-delay: 4.0;
-   animation-duration: 5s;
+   animation-duration: 4s;
 }
 
 
@@ -444,6 +444,31 @@ footer {
   z-index: 1001;
 }
 
+#seis {  
+   animation-delay: 1.0;
+   animation-duration: 3s;
+}
+#siete {  
+  animation-delay: 1.0;
+  animation-duration: 2s;
+}
+#dev1 {  
+  animation-delay: 1.0;
+  animation-duration: 2s;
+}
+
+#dev2 {  
+  animation-delay: 1.5;
+  animation-duration: 3s;
+}
+#dev3 {  
+  animation-delay: 2.0;
+  animation-duration: 4s;
+}
+#dev4 {  
+  animation-delay: 2.5;
+  animation-duration: 5s;
+}
 
 /*graficos programas */
 svg {
@@ -470,35 +495,37 @@ transform-origin: 50% 50%;
   stroke-dasharray: 360;
   stroke-dashoffset: 200;
   stroke: #86e64f;
-  animation: progress-1 3s ease-out;     
+  animation: progress-1 4s ease-out;
+   
+  
 }
 
 .meter-2 {
   stroke: #86e64f;
   stroke-dasharray: 360;
   stroke-dashoffset: 200;    
-  animation: progress-2 3s ease-out;     
+  animation: progress-2 4s ease-out;     
 }
 
 .meter-3 {
   stroke: #86e64f;
   stroke-dasharray: 360;
   stroke-dashoffset: 220;    
-  animation: progress-3 3s ease-out;     
+  animation: progress-3 4s ease-out;     
 }
 
 .meter-4 {
   stroke: #86e64f;
   stroke-dasharray: 360;
   stroke-dashoffset: 160;    
-  animation: progress-4 4s ease-out;     
+  animation: progress-4 5s ease-out;     
 }
 
 .meter-5 {
   stroke: #86e64f;
   stroke-dasharray: 360;
   stroke-dashoffset: 140;    
-  animation: progress-5 4s ease-out;     
+  animation: progress-5 5s ease-out;     
 }
 
 @keyframes progress-1 {
